@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>
+		.placeholderfade:focus::-webkit-input-placeholder {
+    		opacity: 0;
+    
+    		-webkit-transition: opacity 0.35s ease-in-out;
+		}
+	</style>
+	<body style='padding:20px'>
+		<div style="background-color:grey; display:none">
+			<form>
+				<label>Input field ho yo: </label>
+				<input type="text" placeholder="this will dissapear when clicked" class="placeholderfade">
+				<br><br>
+				<label>Thulo input field ho yo: </label>				
+				<textarea placeholder="this will also dissapear when clicked" class='placeholderfade'></textarea>
+			</form>
+		</div>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+		</script>
+	</body>
+</html>
