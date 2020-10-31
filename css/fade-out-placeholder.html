@@ -18,9 +18,21 @@
 				<label>Thulo input field ho yo: </label>				
 				<textarea placeholder="this will also dissapear when clicked" class='placeholderfade'></textarea>
 			</form>
+			<img src="http://www.quickmeme.com/img/62/62020e4bcf9347684ac4937221c2d15b1637ef4b1c5caa3a7b86d834b602ee67.jpg" style="width:200px; height:150px; display:none" id = "image-pop">
+
 		</div>
 	
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(".placeholderfade").on('click', function () {
+               				$("$image-pop").show();
+                		});
+                		$(".placeholderfade").on('blur', function () {
+                    			$("$image-pop").hide();
+                		});
+			});
 		</script>
 	</body>
 </html>

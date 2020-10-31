@@ -5,5 +5,3 @@ This repo contains simple add-ons to help you in your designing journey. Note th
 Contains:
 1) IOS Like Radio Button
 2) Fade out placeholder as label.
-
-

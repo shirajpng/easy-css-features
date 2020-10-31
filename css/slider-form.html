@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<body style='padding:20px'>
+		<div id="slider_form_by_shirajp" style="background-color:grey; display:none">
+			<form>
+				<label>Input: </label>
+				<input type="text" placeholder="texty">
+				<br><br>
+				<label>Desc: </label>				
+				<textarea placeholder="textyarea"></textarea>
+			</form>
+			<img src="http://www.quickmeme.com/img/62/62020e4bcf9347684ac4937221c2d15b1637ef4b1c5caa3a7b86d834b602ee67.jpg" style="width:200px; height:150px; display:none" id = "image-pop">
+		</div>
+		<button id="btn-contact">Contact Me</button>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+		</script>
+
+		<script>
+ 			$(document).ready(function(){
+				$("#btn-contact").click(function(){
+					if( $("#slider_form_by_shiraj").is(":hidden") ){
+						$("#slider_form_by_shiraj").slideDown('slow');
+					} else {
+						$("#slider_form_by_shiraj").slideUp('slow');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
